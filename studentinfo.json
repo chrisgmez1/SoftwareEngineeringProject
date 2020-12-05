@@ -1,0 +1,8 @@
+{
+    "studentFirst":"Joe",
+    "studentLast":"Smith",
+    "studentID":"123456789",
+    "studentCourses":["Math" , "English", "Art" , "P.E." ,"History"],
+    "studentExamScores":[100,98,89,91,90],
+    "studentPhoneNum":"100-203-9999"
+}
