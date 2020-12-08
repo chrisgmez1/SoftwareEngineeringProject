@@ -1,5 +1,5 @@
 from tkinter import *
-
+import os
 def delete2():
     screen3.destroy()
 def delete3():
@@ -45,12 +45,15 @@ def register_user():
 
     Label(screen1, text = "Registration Sucess!", fg = "blue", font = ("Calibri", 11)).pack()
 
+def password_not_recognized():
+    print("Password not recognized")
+
 def login_verify():
     username1 = username_verify.get()
     password1 = password_verify.get()
     username_entry1.delete(0, END)
     password_entry1.delete(0, END)
-
+    
     list_of_files = os.listdir()
     if username1 in list_of_files:
         file1 = open(username1, "r")

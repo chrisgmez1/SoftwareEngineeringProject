@@ -11,9 +11,17 @@ def admin_view():
     canvas_adminview = tk.Canvas(admin_screen,bg="grey",width ="650",height="500")
     canvas_adminview.pack()
 
-    adminLog = tk.Button(admin_screen, text = "Change Grades", padx = 10, pady = 5
+    insertRecords = tk.Button(admin_screen, text = "Insert Records", padx = 10, pady = 5
                                         ,fg="black")
-    adminLog.pack()
+    insertRecords.pack()
+
+    deleteRecords = tk.Button(admin_screen, text = "Delete Records", padx = 10, pady = 5
+                                        ,fg="black")
+    deleteRecords.pack()
+
+    modifyRecords = tk.Button(admin_screen, text = "Modify Records", padx = 10, pady = 5
+                                        ,fg="black")
+    modifyRecords.pack()
 
     admin_screen.mainloop()
 def user_view():
