@@ -1,15 +1,12 @@
 import tkinter as tk
 from tkinter import *
-
-
+import json
 
 def admin_view():
     admin_screen = tk.Tk()
     admin_screen.title("Admin View")
     admin_screen.geometry("750x600")
     Label(admin_screen,text = "Admin",bg = "red", height ="2", width="750").pack()
-    canvas_adminview = tk.Canvas(admin_screen,bg="grey",width ="650",height="500")
-    canvas_adminview.pack()
 
     insertRecords = tk.Button(admin_screen, text = "Insert Records", padx = 10, pady = 5
                                         ,fg="black")
@@ -24,33 +21,23 @@ def admin_view():
     modifyRecords.pack()
 
     admin_screen.mainloop()
-def user_view():
-    user_screen = tk.Tk()
-    user_screen.title("Admin View")
-    user_screen.geometry("750x600")
-    Label(user_screen,text = "User",bg = "blue", height ="2", width="750").pack()
-    canvas_userview = tk.Canvas(user_screen,bg="grey",width ="650",height="500")
-    canvas_userview.pack()
+def view_grades(username,screen):
+    with open('studentinfo.json') as json_file:
+        data = json.load(json_file)
+        for i in data["users"]:
+            if i["username"]==username: 
+                canv = tk.Canvas(screen, bg='yellow', width=250, height=250)
+                canv.pack()
 
-    userLog = tk.Button(user_screen, text = "Change Grades", padx = 10, pady = 5
-                                        ,fg="black")
+        
+def user_view(user):
+    user_screen = tk.Tk()
+    user_screen.title("User View")
+    user_screen.geometry("750x600")
+    Label(user_screen,text = "User",bg = "green", height ="2", width="750").pack()
+
+    userLog = tk.Button(user_screen, text = "View Grades", padx = 10, pady = 5
+                                        ,fg="black",command=view_grades(user,user_screen))
     userLog.pack()
 
     user_screen.mainloop()
-def main_screen():
-    screen = tk.Tk()
-    screen.title("Learning Managment System")
-    screen.geometry("300x250")
-    Label(text = "Login",bg = "grey", height ="2", width="250").pack()
-    
-    adminLog = tk.Button(screen, text = "Admin Login", padx = 10, pady = 5
-                                        ,fg="black", command =admin_view)
-    adminLog.pack()
-
-    userLog = tk.Button(screen, text = "User Login", padx = 10, pady = 5
-                                        ,fg="black", command= user_view)
-    userLog.pack()
-
-    screen.mainloop()
-
-main_screen()

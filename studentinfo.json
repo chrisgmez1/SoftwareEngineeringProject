@@ -1,8 +1,25 @@
 {
+    "users":[
+        {
+    "username":"JoeSmith01",
     "studentFirst":"Joe",
     "studentLast":"Smith",
     "studentID":"123456789",
     "studentCourses":["Math" , "English", "Art" , "P.E." ,"History"],
     "studentExamScores":[100,98,89,91,90],
     "studentPhoneNum":"100-203-9999"
+
+    },
+    {
+        "username":"KennyJohnson",
+        "studentFirst":"Kenny",
+        "studentLast":"Johnson",
+        "studentID":"131456381",
+        "studentCourses":["Math" , "English", "Art" , "P.E." ,"History"],
+        "studentExamScores":[79,98,85,92,80],
+        "studentPhoneNum":"111-555-0339"
+    
+        }
+    ]
+
 }
