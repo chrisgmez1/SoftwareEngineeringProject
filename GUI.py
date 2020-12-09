@@ -1,7 +1,7 @@
 from tkinter import *
 import os
 from app import admin_view,user_view
-def delete2():
+def delete2():  
     screen3.destroy()
 def delete3():
     screen4.destroy()
@@ -55,7 +55,6 @@ def login_verify():
     username_entry1.delete(0, END)
     password_entry1.delete(0, END)
     if username1 == "admin" and password1 == "password":
-        login_sucess()
         admin_view()
     else:    
         list_of_files = os.listdir()
@@ -63,7 +62,6 @@ def login_verify():
             file1 = open(username1, "r")
             verify = file1.read().splitlines()
             if password1 in verify:
-                login_sucess()
                 user_view(username1)
             else:
                 password_not_recognized()
