@@ -1,5 +1,6 @@
 from tkinter import *
 import os
+
 from record_funcs import admin_view,user_view
 def delete2():  
     screen3.destroy()

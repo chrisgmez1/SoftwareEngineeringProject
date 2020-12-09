@@ -46,7 +46,20 @@
         },
         {
             "studentAddress": "935 O Street",
-            "studentCourses": {},
+            "studentCourses": [
+                "History",
+                "PE",
+                "Math",
+                "English",
+                "Science"
+            ],
+            "studentExamScores": [
+                78,
+                87,
+                89,
+                88,
+                85
+            ],
             "studentFirst": "joey",
             "studentID": "8344593",
             "studentLast": "wheeler",
@@ -55,12 +68,35 @@
         },
         {
             "studentAddress": "2324 Apple Street",
-            "studentCourses": {},
+            "studentCourses": [
+                "Math",
+                "Science",
+                "Spanish",
+                "History",
+                "P.E."
+            ],
+            "studentExamScores": [
+                100,
+                90,
+                91,
+                99,
+                98
+            ],
             "studentFirst": "adam",
             "studentID": "3953535",
             "studentLast": "opal",
             "studentPhoneNum": "464-234-2423",
             "username": "adam04"
+        },
+        {
+            "studentAddress": "23 ne",
+            "studentCourses": [],
+            "studentExamScores": [],
+            "studentFirst": "world",
+            "studentID": "999",
+            "studentLast": "je",
+            "studentPhoneNum": "0909",
+            "username": "hello"
         }
     ]
 }
