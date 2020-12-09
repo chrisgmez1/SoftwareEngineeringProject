@@ -1,0 +1,66 @@
+{
+    "users": [
+        {
+            "studentAddress": "1021 MLK Street",
+            "studentCourses": [
+                "Math",
+                "English",
+                "Art",
+                "P.E.",
+                "History"
+            ],
+            "studentExamScores": [
+                100,
+                98,
+                89,
+                91,
+                90
+            ],
+            "studentFirst": "Joe",
+            "studentID": "123456789",
+            "studentLast": "Smith",
+            "studentPhoneNum": "100-203-9999",
+            "username": "JoeSmith01"
+        },
+        {
+            "studentAddress": "819 Fourth Street",
+            "studentCourses": [
+                "Math",
+                "English",
+                "Art",
+                "P.E.",
+                "History"
+            ],
+            "studentExamScores": [
+                79,
+                98,
+                85,
+                92,
+                80
+            ],
+            "studentFirst": "Kenny",
+            "studentID": "131456381",
+            "studentLast": "Johnson",
+            "studentPhoneNum": "111-555-0339",
+            "username": "KennyJohnson"
+        },
+        {
+            "studentAddress": "935 O Street",
+            "studentCourses": {},
+            "studentFirst": "joey",
+            "studentID": "8344593",
+            "studentLast": "wheeler",
+            "studentPhoneNum": "345-345-6652",
+            "username": "joey223"
+        },
+        {
+            "studentAddress": "2324 Apple Street",
+            "studentCourses": {},
+            "studentFirst": "adam",
+            "studentID": "3953535",
+            "studentLast": "opal",
+            "studentPhoneNum": "464-234-2423",
+            "username": "adam04"
+        }
+    ]
+}

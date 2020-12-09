@@ -1,6 +1,6 @@
 from tkinter import *
 import os
-from app import admin_view,user_view
+from record_funcs import admin_view,user_view
 def delete2():  
     screen3.destroy()
 def delete3():
@@ -35,8 +35,8 @@ def user_not_found():
 def register_user():
     username_info = username.get()
     password_info = password.get()
-
-    file=open(username_info, "w")
+    filepath = "usercredentials\\"
+    file=open(filepath + username_info, "w")
     file.write(username_info+ "\n")
     file.write(password_info)
     file.close()
@@ -57,9 +57,9 @@ def login_verify():
     if username1 == "admin" and password1 == "password":
         admin_view()
     else:    
-        list_of_files = os.listdir()
+        list_of_files = os.listdir("usercredentials")
         if username1 in list_of_files:
-            file1 = open(username1, "r")
+            file1 = open("usercredentials\\" + username1, "r")
             verify = file1.read().splitlines()
             if password1 in verify:
                 user_view(username1)
